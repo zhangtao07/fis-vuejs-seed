@@ -24,7 +24,7 @@ npm install [-g] fis3-hook-module
 npm install [-g] fis3-postpackager-loader
 
 #编译预览
-cd fis-vuejs-seed
+cd fis-vuejs-seed/app
 fis3 release
 fis3 server start --type node
 
@@ -39,7 +39,7 @@ fis3 server start --type node
 
 ### FIS3结合
 
-FIS基础的压缩、打包、md5、加cdn域名、csssprite、文件监听、自动刷新、本地调试等待当然不在话下，以下主要描述与VueJS直接相关的一些结合。
+FIS基础的压缩、打包、md5、加cdn域名、csssprite、文件监听、自动刷新、本地调试等当然不在话下，以下主要描述与VueJS直接相关的一些结合。
 
 #### 目录结构
 
@@ -73,7 +73,7 @@ app
 
 VueJS组件开发过程中可以通过`__inline`轻松将模板内容编译到js中，提升可维护性。
 
-```
+```javascript
 module.exports = Vue.component("c-list", {
     template: __inline('list.html')
 })
@@ -83,7 +83,7 @@ module.exports = Vue.component("c-list", {
 
 less、sass、jade等等异构语言的编译都有相应的支持，如本项目中sass的编译配置：
 
-```
+```javascript
 //sass的编译
 fis.match('**/*.scss', {
     rExt: '.css', // from .scss to .css
@@ -97,12 +97,15 @@ fis.match('**/*.scss', {
 #### 模块化开发
  
  - 组件拆分
+   
    组件拆分是模块化基本要素，VueJS本身就是推荐由组件来组织页面，如component中的各个组件。
 
  - 依赖分析
+   
    资源中存在依赖关系，本项目使用了fis的modjs模块化方案，您可以像开发nodejs一样直接写require便能自动完成依赖分析和资源加载。
 
  - 静态资源表
+   
    如果您想了解资源加载细节，推荐您了解FIS静态资源表机制，您可以看到生成的页面中已经有资源配置。更多细节请查看FIS官网文章。
  
 #### 组件仓库
@@ -112,6 +115,6 @@ fis.match('**/*.scss', {
 
 ### 相关链接
 
-[FIS官网](http://fis.baidu.com)
-[Github](https://github.com/fex-team/fis3)
+ - [FIS官网](http://fis.baidu.com)
+ - [Github](https://github.com/fex-team/fis3)
 

@@ -59,5 +59,21 @@ fis.match('::packager', {
     })
     
 }).match('**/*.{css,scss}', {
-    packTo: '/static/all.css'
+    packTo: '/static/pkg/all.css' //css打成一个包
 })
+
+//生产环境下CSS、JS压缩合并
+//使用方法 fis3 release prod
+fis.media('prod')
+    .match('**.js', {
+        optimizer: fis.plugin('uglify-js')
+    })
+    .match('component_modules/*.js',{
+        packTo: '/static/pkg/common.js' 
+    })
+    .match('components/**/*.js',{
+        packTo: '/static/pkg/app.js'
+    })
+    .match('**.css', {
+        optimizer: fis.plugin('clean-css')
+    });
