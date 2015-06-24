@@ -1,0 +1,33 @@
+.row-fluid .recommended .sort-nav {
+  padding-left: 32px;
+  margin-top: 50px;
+  padding: 13px 0 0 20px;
+  margin-bottom: 0;
+}
+.sort-nav li {
+  float: left;
+  margin: 10px 15px 5px 0;
+  list-style: none;
+  line-height: 20px;
+}
+.sort-nav li a {
+  padding: 5px 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+  box-sizing: border-box;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #555;
+}
+.sort-nav li.active a {
+  color: white;
+  border-color: #e78170;
+  background: #e78170;
+}
+.loader-tiny {
+  width: 17px;
+  margin-top:5px;
+}

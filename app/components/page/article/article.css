@@ -1,0 +1,103 @@
+.reader-font1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.label, .badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 14px;
+  color: white;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #999999;
+}
+.container {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container .article {
+  padding: 80px 40px 10px;
+}
+.container .author-info {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999999;
+}
+.btn.follow, .btn.following {
+  border-radius: 50px;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 22px;
+}
+.btn-success {
+  color: white;
+  border-color: #49be38;
+  background: #49be38;
+}
+.container .author-info .follow, .container .author-info .following {
+  float: right;
+  margin-top: 10px;
+}
+.container .author-info .avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.container .author-info .label {
+  background: none;
+  border: 1px solid #e78170;
+  color: #e78170;
+  text-shadow: none;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  border-radius: 4px;
+}
+.container .author-info .author-name {
+  color: #4094c7;
+  margin: 0 5px;
+}
+.container .author-info {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999999;
+}
+.container .article .title {
+  font-family: Georgia, "Times New Roman", Times, "Kai", "Kaiti SC", "KaiTi", "BiauKai", "楷体", "楷体_GB2312", serif;
+  color: rgb(85, 85, 85);
+}
+.container .author-info>div {
+  margin-top: 3px;
+}
+.container .author-info {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+  overflow: hidden;
+  font-size: 12px;
+  color: #999999;
+}
+.container .meta-top {
+  margin: 20px 0;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 12px;
+  color: #999;
+}

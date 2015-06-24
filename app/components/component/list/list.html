@@ -1,0 +1,46 @@
+
+<div id="list-container">
+
+    <!-- 文章分类 -->
+    <c-category v-with="showLoading:showLoading,type:type,cates:cates"></c-category>
+    
+    <!-- 文章列表 -->
+    <ul class="article-list top-notes">
+        <li v-repeat="articles" v-class="have-img:wrap_img">
+            <!-- 文章封面 -->
+            <a v-if="wrap_img" class="wrap-img" href="#p/{{ article_id }}">
+                <img v-attr="src: wrap_img" alt="300">
+            </a>
+            <div>
+                <p class="list-top">
+                    <a class="author-name blue-link" href="#users/{{ author_id }}">
+                        {{ author }}
+                    </a>
+                    <em>
+                        ·
+                    </em>
+                    <span class="time">
+                        {{ timestamp | datetime }}
+                    </span>
+                </p>
+                <h4 class="title">
+                    <a  href="#p/{{ article_id }}">
+                        {{ title }}
+                    </a>
+                </h4>
+                <a class="avatar maleskine-author" href="#users/{{ author_id }}">
+                    <img  v-attr="src: avatar">
+                </a>
+                <div class="list-footer">
+                    <a  href="#p/{{ article_id }}">
+                        阅读 {{ read }}
+                    </a>
+                    <a  href="#p/{{ article_id }}">
+                        · 评论 {{ comment }}
+                    </a>
+                    · 喜欢 {{ like }}
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

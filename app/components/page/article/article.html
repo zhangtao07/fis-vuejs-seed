@@ -1,0 +1,59 @@
+
+<div class="container reader-font1">
+    <div class="article">
+        <div class="preview">
+            <div class="author-info">
+                <a class="avatar" href="#">
+                    <img thumbnail="90x90" quality="100" v-attr="src:article.avatar">
+                </a>
+                <span class="label">
+                    作者
+                </span>
+                <a class="author-name blue-link" href="#">
+                    <span>
+                        {{ article.author }}
+                    </span>
+                </a>
+                <span data-toggle="tooltip" data-original-title="最后编辑于 2015.06.21 18:49">
+                    {{ article.timestamp }}
+                </span>
+                <div>
+                    <span>
+                        写了85799字
+                    </span>
+                    ，
+                    <span>
+                        被{{ article.read }}人关注
+                    </span>
+                    ，
+                    <span>
+                        获得了{{ article.like }}个喜欢
+                    </span>
+                </div>
+            </div>
+            <h1 class="title">
+                {{ article.title }}
+            </h1>
+            <div class="meta-top">
+                <span class="wordage">
+                    字数5669
+                </span>
+                <span class="views-count">
+                    阅读{{ article.read }}
+                </span>
+                <span class="comments-count">
+                    评论{{ article.comment }}
+                </span>
+                <span class="likes-count">
+                    喜欢{{ article.like }}
+                </span>
+            </div>
+           
+            <div class="show-content" v-html="article.content | marked">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<c-footer></c-footer>

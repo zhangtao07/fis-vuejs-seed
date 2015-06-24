@@ -1,0 +1,11 @@
+{
+  "name": "fis-vue-seed",
+  "version": "0.0.1",
+  "description": "Build VueJS project with FIS3",
+  "author": "zhangtao07",
+  "license": "MIT",
+  "dependencies": {
+    "fis3-hook-module": "*",
+    "fis3-postpackager-loader": "*"
+  }
+}

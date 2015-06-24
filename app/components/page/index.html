@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FIS-VueJS 简书Demo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/components/page/trend/trend.scss">
+    </head>
+    <body>
+        <div id="app" class="row-fluid">
+            <div v-component="{{  currentView }}">
+            </div>
+        </div>
+        <script src="/static/js/mod.js"></script>
+        <script type="text/javascript">
+            require(['main/main.js']);
+        </script>
+    </body>
+</html>

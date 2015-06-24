@@ -1,0 +1,157 @@
+a {
+  color: #555555;
+  text-decoration: none;
+}
+.clearfix {
+    *zoom:1}
+
+.clearfix:before,.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.clearfix:after {
+    clear: both
+}
+.row-fluid .recommended .top-notes {
+  padding-left: 20px;
+  margin-top: 35px;
+}
+.article-list {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.article-list li {
+    position: relative;
+    width: 100%;
+    padding-bottom: 12px;
+    margin: 0 0 15px;
+    border-bottom: 1px dashed #d9d9d9;
+    box-sizing: border-box;
+    word-wrap: break-word
+}
+
+.article-list li:last-child {
+    border: none
+}
+
+.article-list li>b {
+    display: none
+}
+
+.article-list .list-top {
+    margin-bottom: 7px;
+    font-size: 12px
+}
+
+.article-list .list-top .time {
+    margin-left: 3px;
+    color: #717171
+}
+
+.article-list .title {
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5
+}
+
+.article-list .title a:empty::before {
+    content: "你个泼猴竟然不写标题拉黑";
+    display: inline-block;
+    font-style: italic;
+    text-decoration: line-through
+}
+
+.article-list .avatar {
+    position: absolute;
+    top: 28px;
+    right: 1px;
+    width: 32px;
+    height: 32px
+}
+
+.article-list .list-footer {
+    padding: 1px 0;
+    overflow: hidden;
+    color: #999999;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px
+}
+
+.article-list .list-footer a {
+    color: #999999
+}
+
+.article-list .list-footer a:hover {
+    color: #717171
+}
+
+.article-list .list-footer ul {
+    margin: 0
+}
+
+.article-list .list-footer li {
+    width: auto;
+    padding: 0;
+    margin: 0 0 0 8px;
+    float: left;
+    border: none;
+    list-style: none
+}
+
+.article-list .list-footer .dropdown-menu li {
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.article-list .list-footer .dropdown-menu li a {
+    margin: 0;
+    color: #555555
+}
+
+.article-list .list-footer .dropdown-menu li a:hover {
+    color: white
+}
+
+.article-list .have-img::before {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.article-list .have-img::after {
+    clear: both
+}
+
+.article-list .have-img .wrap-img {
+    float: left
+}
+
+.article-list .have-img .wrap-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    border: 1px solid #eeeeee
+}
+
+.article-list .have-img>div {
+    padding-left: 95px
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
