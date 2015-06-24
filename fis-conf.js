@@ -13,6 +13,11 @@ fis.match("components/**", {
     release: '/static/$0'
 });
 
+//doc目录不发布
+fis.match("doc/**", {
+    release: false
+});
+
 fis.match("/component_modules/*.js", {
     isMod: true,
     useMap: true,
@@ -23,7 +28,6 @@ fis.match("/component_modules/*.js", {
 fis.match(/^\/components\/component\/(.*)$/i, {
     id : '$1'
 });
-
 
 //page里的页面发布到根目录
 fis.match("components/page/(*.html)",{
