@@ -17,9 +17,9 @@
 npm install -g fis3
 
 #下载项目
-git clone 
+git clone https://github.com/zhangtao07/fis-vuejs-seed.git
 
-#安装模块化插件
+#安装模块化插件,fis3支持本地插件
 npm install [-g] fis3-hook-module
 npm install [-g] fis3-postpackager-loader
 
