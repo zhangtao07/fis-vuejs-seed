@@ -38,7 +38,7 @@ fis.match("components/page/(*.html)",{
 //sass的编译
 fis.match('**/*.scss', {
     rExt: '.css', // from .scss to .css
-    parser: fis.plugin('sass', {
+    parser: fis.plugin('node-sass', {
         //fis-parser-sass option
     })
 });
